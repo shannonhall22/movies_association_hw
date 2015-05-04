@@ -43,8 +43,7 @@
 
           <dt>Director</dt>
           <!-- TODO: Extract the next line into an instance method so you can use movie.director.name instead of director.name -->
-          <% director = Director.find(movie.director_id) %>
-          <dd><%= link_to(director.name, directors_url(director.id)) %></dd>
+          <dd><%= link_to(movie.director.name, director_url(movie.director.id)) %></dd>
 
         </dl>
         <div class="btn-group btn-group-justified">

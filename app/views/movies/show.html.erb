@@ -27,7 +27,7 @@
 
               <dt>Director</dt>
               <!-- TODO: Extract the next line into an instance method  so you can use @movie.director.name instead of @director.name-->
-              <dd><%= link_to @director.name, director_url(@director.id) %></dd>
+              <dd><%= link_to image_tag(@movie.director.name, director_url(@movie.director.id)) %></dd>
 
             </dl>
             <div class="btn-group btn-group-justified">
