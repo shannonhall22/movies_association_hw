@@ -26,6 +26,7 @@
               <dd><%= image_tag(@movie.image_url)%></dd>
 
               <dt>Director</dt>
+              <!-- TODO: Extract the next line into an instance method  so you can use @movie.director.name instead of @director.name-->
               <dd><%= link_to @director.name, director_url(@director.id) %></dd>
 
             </dl>

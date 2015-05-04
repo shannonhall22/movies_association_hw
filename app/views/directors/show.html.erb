@@ -22,6 +22,17 @@
               <dt>Dob</dt>
               <dd><%= @director.dob %></dd>
 
+              <ul>
+              <!-- TODO: Extract the next line into an instance method so you can use @director.movies.each instead of @movies.each -->
+                <% @movies.each do |movie| %>
+                  <li><%= link_to(image_tag(movie.image_url), movie_url(movie.id)) %></li>
+                <% end %>
+              </ul>
+
+              <!-- Display a list of this director's movies -->
+              <!-- For each movie, create a link to that movie's show page -->
+              <!-- Bonus: make the link an image  -->
+
             </dl>
             <div class="btn-group btn-group-justified">
               <%= link_to directors_url, :class => "btn btn-primary" do %>

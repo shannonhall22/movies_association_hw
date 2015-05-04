@@ -29,3 +29,7 @@ This will auto-prepopulate a bunch of rows for you so that we can get down to wo
 First, make sure a user can go to a movie's show page and see the name of it's associated director. There are many ways to do this - see if you can find the most elegant.
 
 Next, if you are ready for a challenge, get a list of associated movies to display on a director's show page. You'll need to learn about the `.where` method in Rails.
+
+## Part 3: Instance methods
+
+There are comments in the movies show page, the movie's index page and the director's show page indicating code you should extract into instance methods. Each comment begins with the phrase "TODO"
